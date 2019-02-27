@@ -1,0 +1,123 @@
+d34cf720a43ea2ef8dbf2ba7d9f18d39bb1eb795	not-for-merge	branch '1' of https://github.com/vapor/postgresql
+cd6fe64bb9fd98ccbe4788208c4a4f373e966a7a	not-for-merge	branch 'fix-indentation' of https://github.com/vapor/postgresql
+144a68bf86136d505662db1966caed391b72686e	not-for-merge	branch 'fix-leaking-event-loop-group' of https://github.com/vapor/postgresql
+486c37862da1073f35aed4980ea03c591ab3555e	not-for-merge	branch 'json-type' of https://github.com/vapor/postgresql
+1d39d75ff247272535de6c4bce845d559ef585a9	not-for-merge	branch 'master' of https://github.com/vapor/postgresql
+47651967f702efc32e7da3010d75d0c5e8ff5bd7	not-for-merge	branch 'nio-connection-leak' of https://github.com/vapor/postgresql
+bf1f39d75fd6c09b365fb988d5ff1e5b0ddf9d3d	not-for-merge	branch 'translating-stream-close' of https://github.com/vapor/postgresql
+bdb1eaf53a27d51583102c7ffcdd1261787637b4	not-for-merge	'refs/pull/1/head' of https://github.com/vapor/postgresql
+0735c212b0e8607dad95351636c104b897c09816	not-for-merge	'refs/pull/10/head' of https://github.com/vapor/postgresql
+9df99d3c8ae8955f959d4d28a403943c9728fbcf	not-for-merge	'refs/pull/100/head' of https://github.com/vapor/postgresql
+3b74b9a8420f46412b45654bbde746e58d57f9d9	not-for-merge	'refs/pull/100/merge' of https://github.com/vapor/postgresql
+dee0d871ea0ff091e50609cf5d123ab5b12defb4	not-for-merge	'refs/pull/102/head' of https://github.com/vapor/postgresql
+4b6cb0fa092781671347dea7237bdeaa6a5bcc16	not-for-merge	'refs/pull/104/head' of https://github.com/vapor/postgresql
+310143b6a5e6d1d7ab786e847262c0bbe38b1705	not-for-merge	'refs/pull/104/merge' of https://github.com/vapor/postgresql
+dca934a9340c96eb4becba06198d073620f637a4	not-for-merge	'refs/pull/105/head' of https://github.com/vapor/postgresql
+d26bfc47d02d3bf1095b792cd068b567cde42353	not-for-merge	'refs/pull/106/head' of https://github.com/vapor/postgresql
+7b7c1577e2b570526aafb6e43594b66660acc89a	not-for-merge	'refs/pull/107/head' of https://github.com/vapor/postgresql
+0e281a70356221ca887915b4020ace52f8cc2d1f	not-for-merge	'refs/pull/107/merge' of https://github.com/vapor/postgresql
+1b355d6da8ca289c2a57700101b5c353e0bbfefc	not-for-merge	'refs/pull/109/head' of https://github.com/vapor/postgresql
+2ae8c2da8be7df006a1cbace6193a8a6da0140d7	not-for-merge	'refs/pull/11/head' of https://github.com/vapor/postgresql
+1259ab48a4479c130dd680e2ff884225f63aef51	not-for-merge	'refs/pull/111/head' of https://github.com/vapor/postgresql
+76b12fef2abcd3f494a8349bdb7bb6facb41bcbd	not-for-merge	'refs/pull/112/head' of https://github.com/vapor/postgresql
+b5690c55bf0a8f4135d121e6eaf7bfafbb6c4d68	not-for-merge	'refs/pull/113/head' of https://github.com/vapor/postgresql
+c9978744e6ddb2b0dc42858706c10de30c1f78ae	not-for-merge	'refs/pull/116/head' of https://github.com/vapor/postgresql
+3f07f8ae746fda8119040c25ffef6288fa885786	not-for-merge	'refs/pull/117/head' of https://github.com/vapor/postgresql
+7adbfd1a0f0dc59dafc55c4e4b0f3aeaafd28b9a	not-for-merge	'refs/pull/117/merge' of https://github.com/vapor/postgresql
+f592d101dd98c61dffcf10fa584a0e350d25deed	not-for-merge	'refs/pull/119/head' of https://github.com/vapor/postgresql
+650dc1ce1771aa493382916d9cfa0da00bf77459	not-for-merge	'refs/pull/12/head' of https://github.com/vapor/postgresql
+49de70b9579e172a9aa759d92270273d4fcc8b85	not-for-merge	'refs/pull/121/head' of https://github.com/vapor/postgresql
+2b996d9b8e1373eae6eab853cbef80cb11be47f4	not-for-merge	'refs/pull/123/head' of https://github.com/vapor/postgresql
+fa0511e4e93f8b06111d5da83bdc0d912677c91c	not-for-merge	'refs/pull/15/head' of https://github.com/vapor/postgresql
+47e39a6cdc458ab543dba1c76a9205135f834c23	not-for-merge	'refs/pull/16/head' of https://github.com/vapor/postgresql
+b3ef0f658b1d5f487342a20c0ee8ff6d7b41a86a	not-for-merge	'refs/pull/17/head' of https://github.com/vapor/postgresql
+1a36732f90002c754700093c540668f49fdb2933	not-for-merge	'refs/pull/19/head' of https://github.com/vapor/postgresql
+16d67e98ca4ff8bc0d6835482ee2ab828f0bfd4c	not-for-merge	'refs/pull/19/merge' of https://github.com/vapor/postgresql
+53c619bb6a44661cbb8eb1a9306a9ed612018e1f	not-for-merge	'refs/pull/20/head' of https://github.com/vapor/postgresql
+77144083b43cba5f9efaf328c5481e008b507c88	not-for-merge	'refs/pull/21/head' of https://github.com/vapor/postgresql
+a22638136094fbf59bf01a732798a45e75424749	not-for-merge	'refs/pull/22/head' of https://github.com/vapor/postgresql
+9c2079d7e8747c7fea7c35db56ca7702b2ffbb51	not-for-merge	'refs/pull/23/head' of https://github.com/vapor/postgresql
+bd3d280d22a4d143dfd184db7c18e7d892e06bdd	not-for-merge	'refs/pull/25/head' of https://github.com/vapor/postgresql
+a81d2339e48da82d943210342b0535bbfd8af28d	not-for-merge	'refs/pull/27/head' of https://github.com/vapor/postgresql
+c36db27fb8857dc2018c663ec1dfba9a62321cff	not-for-merge	'refs/pull/29/head' of https://github.com/vapor/postgresql
+a3f4297e20e0743b139919a46809bddbfda3ca3f	not-for-merge	'refs/pull/31/head' of https://github.com/vapor/postgresql
+93444ff8df7246be1fa2b8859295bd7f53b5b598	not-for-merge	'refs/pull/32/head' of https://github.com/vapor/postgresql
+4f5c24b575239572a0c18372ed9d7bc16ac703b8	not-for-merge	'refs/pull/34/head' of https://github.com/vapor/postgresql
+144a68bf86136d505662db1966caed391b72686e	not-for-merge	'refs/pull/35/head' of https://github.com/vapor/postgresql
+b5e234fac851860610ee19f020cf9f64a315b7d4	not-for-merge	'refs/pull/35/merge' of https://github.com/vapor/postgresql
+b70b73cef710b45d38d792509fd680c26575be51	not-for-merge	'refs/pull/36/head' of https://github.com/vapor/postgresql
+dcfe5f0a17345d7c45bd442ed0f1c2e166b2fe1e	not-for-merge	'refs/pull/38/head' of https://github.com/vapor/postgresql
+b4ca67f42f0639413d74b7a2b4bfcc2d63337a34	not-for-merge	'refs/pull/43/head' of https://github.com/vapor/postgresql
+8c22eab521d995d86486f0dc58020772b9b8ba43	not-for-merge	'refs/pull/44/head' of https://github.com/vapor/postgresql
+d825a9cd0dd924b8767badbc92d090fd8a5420ae	not-for-merge	'refs/pull/44/merge' of https://github.com/vapor/postgresql
+0e6a4682b823a628fab1a65f72cf225c84f1e035	not-for-merge	'refs/pull/45/head' of https://github.com/vapor/postgresql
+62fc7637b55905438a6f1c282bd612bb4a7dff9a	not-for-merge	'refs/pull/47/head' of https://github.com/vapor/postgresql
+af0e05e7971d4b24a6a28d0f505f04f0286a79f8	not-for-merge	'refs/pull/48/head' of https://github.com/vapor/postgresql
+6f2510ec9f00ad31a2e594cfb23b177f0c200926	not-for-merge	'refs/pull/5/head' of https://github.com/vapor/postgresql
+ca097e1dad749ee9f726cb94816cad2f44ccaba2	not-for-merge	'refs/pull/51/head' of https://github.com/vapor/postgresql
+e20f779288d04423a5f38eb2718f4eca050ed8bf	not-for-merge	'refs/pull/51/merge' of https://github.com/vapor/postgresql
+3fb6e2fca01063a0c251a8c8a32a73946476adef	not-for-merge	'refs/pull/52/head' of https://github.com/vapor/postgresql
+fe5774d3927cfdbd634720715c911dd395a7829a	not-for-merge	'refs/pull/54/head' of https://github.com/vapor/postgresql
+2220abdfe5c1e47e6ec07dcd41606b070ac46e6c	not-for-merge	'refs/pull/57/head' of https://github.com/vapor/postgresql
+59054e589c1c889c3807bef639c59f2eef1bf69f	not-for-merge	'refs/pull/58/head' of https://github.com/vapor/postgresql
+a3b40abbc56a61398115b6830274434551d7ee26	not-for-merge	'refs/pull/6/head' of https://github.com/vapor/postgresql
+f446e140202a4ee1f7ebe9d6837b788de2004ed8	not-for-merge	'refs/pull/62/head' of https://github.com/vapor/postgresql
+4c0cddcd733f36de0243266d3e72a5a24b4ac5fe	not-for-merge	'refs/pull/66/head' of https://github.com/vapor/postgresql
+bd05d2bae4f1d266eecf4498794855482c6a9f3b	not-for-merge	'refs/pull/68/head' of https://github.com/vapor/postgresql
+3725479d95855fbfebe28e6808a14e35951c0c46	not-for-merge	'refs/pull/70/head' of https://github.com/vapor/postgresql
+718fae20e978f694e0377eb171f7253d347481e5	not-for-merge	'refs/pull/71/head' of https://github.com/vapor/postgresql
+80ddc3c44d33e77c37fdba12f1f3d82e031e5454	not-for-merge	'refs/pull/72/head' of https://github.com/vapor/postgresql
+cd6fe64bb9fd98ccbe4788208c4a4f373e966a7a	not-for-merge	'refs/pull/74/head' of https://github.com/vapor/postgresql
+62631cb0160d27186588214ea45e7fafd51eb8d0	not-for-merge	'refs/pull/75/head' of https://github.com/vapor/postgresql
+0db19a67ee616e387ec23e2be487b75a36ef4856	not-for-merge	'refs/pull/75/merge' of https://github.com/vapor/postgresql
+23a2f767dea03b79a06d7b903ff7bad3fe8e018b	not-for-merge	'refs/pull/77/head' of https://github.com/vapor/postgresql
+42d832d03eb7aebaac59a815df1dba9019d63d54	not-for-merge	'refs/pull/78/head' of https://github.com/vapor/postgresql
+b1ce0382515e56495939c25e7ec7cbb16d54d2f4	not-for-merge	'refs/pull/79/head' of https://github.com/vapor/postgresql
+2b0e8a9f7a05dcff85265cb467c28fcd9b0c7b83	not-for-merge	'refs/pull/81/head' of https://github.com/vapor/postgresql
+f4c38ab27c690670828d1cbed47c4b05002818c5	not-for-merge	'refs/pull/84/head' of https://github.com/vapor/postgresql
+a335c3d0db8aafd99ad115863998c5e7f0a906b7	not-for-merge	'refs/pull/86/head' of https://github.com/vapor/postgresql
+6133e94fbb9580c418b544a28c347521faa4354f	not-for-merge	'refs/pull/88/head' of https://github.com/vapor/postgresql
+b48c325abc0b334ad3ca2eaa9bba529300fe78f5	not-for-merge	'refs/pull/89/head' of https://github.com/vapor/postgresql
+7ca69c953216d2debcee13d9f7f0c41e7f023fa0	not-for-merge	'refs/pull/90/head' of https://github.com/vapor/postgresql
+4a5ae952d8ba61faaab9009db12f719352a2a5a5	not-for-merge	'refs/pull/91/head' of https://github.com/vapor/postgresql
+7162ff35738985aae96fa215c0a048db4e5aa5e3	not-for-merge	'refs/pull/91/merge' of https://github.com/vapor/postgresql
+8dfbf0f7160428188d7e7e641cb45af15d22659e	not-for-merge	'refs/pull/93/head' of https://github.com/vapor/postgresql
+d5e910366b59b042a0138ccba5201533afdbc4ae	not-for-merge	'refs/pull/94/head' of https://github.com/vapor/postgresql
+c2bb1b59425c426d3378ae6228d823d4229212dd	not-for-merge	'refs/pull/95/head' of https://github.com/vapor/postgresql
+e3853d1c347ae436c6103aaf87e305afa7ee2098	not-for-merge	'refs/pull/99/head' of https://github.com/vapor/postgresql
+a4c205aa628550e06263fb4d161133fb0dc4eb5c	not-for-merge	tag '1.0.0' of https://github.com/vapor/postgresql
+f4e7b9f70bd5383fbe1daf8f941be0a587e1290d	not-for-merge	tag '1.0.0-beta.1' of https://github.com/vapor/postgresql
+2c9333d023e8155c478b5d8ebf177b461146f22f	not-for-merge	tag '1.0.0-beta.2' of https://github.com/vapor/postgresql
+29b446c9997e39e53ae37aac938c843fa45509a5	not-for-merge	tag '1.0.0-beta.2.1' of https://github.com/vapor/postgresql
+6ce7b99eb2dd1f87edf74c493f2fa41c33d62da3	not-for-merge	tag '1.0.0-beta.3' of https://github.com/vapor/postgresql
+c4739e3d94bf4c93dcfa97c0364441a7a209b87c	not-for-merge	tag '1.0.0-beta.3.1' of https://github.com/vapor/postgresql
+25a043596c6550373f103b0153ea196335afda35	not-for-merge	tag '1.0.0-rc.1' of https://github.com/vapor/postgresql
+2d93ec3b5bc0bbbf0e4e095d5f07efdc736b8e3f	not-for-merge	tag '1.0.0-rc.1.0.1' of https://github.com/vapor/postgresql
+19c7c8977b1830a1fa2bb7e8df9c588a769cb89c	not-for-merge	tag '1.0.0-rc.2' of https://github.com/vapor/postgresql
+387cf9ea6e9079b62c6108ef7ee1f651e4ee2b19	not-for-merge	tag '1.0.0-rc.2.0.1' of https://github.com/vapor/postgresql
+64f9c20cae08113a022341dee27c5bbfc2607c2c	not-for-merge	tag '1.0.0-rc.2.0.2' of https://github.com/vapor/postgresql
+388346471c6a89c2695235d8ffff43c5941283af	not-for-merge	tag '1.0.0-rc.2.0.3' of https://github.com/vapor/postgresql
+dfc03db659141b2e0c1130ce7c87c6ad2315fe7b	not-for-merge	tag '1.0.0-rc.2.1' of https://github.com/vapor/postgresql
+bcbf90c9f40ab57e3800a2fd96dd77371c32e46a	not-for-merge	tag '1.0.0-rc.2.2' of https://github.com/vapor/postgresql
+4988607c3b2369248c6cfcd34274241a8632cd69	not-for-merge	tag '1.0.0-rc.2.2.1' of https://github.com/vapor/postgresql
+9721627e9dfa103cc41abd8e4a7e3a937fa6cb63	not-for-merge	tag '1.0.0-rc.2.2.2' of https://github.com/vapor/postgresql
+a89177748b28afbd882cf8f892837b626f9f46b2	not-for-merge	tag '1.0.0-rc.2.2.3' of https://github.com/vapor/postgresql
+8a37a5ddf864ce9c371faca7bab3f209a825657b	not-for-merge	tag '1.0.0-rc.3' of https://github.com/vapor/postgresql
+50919e1147981194f75ec05952fa355cbc150c8e	not-for-merge	tag '1.0.0-rc.3.0.1' of https://github.com/vapor/postgresql
+4ebcd66978a623e3b2d252fcf707cbe81ec753ce	not-for-merge	tag '1.0.0-rc.3.0.2' of https://github.com/vapor/postgresql
+e3d90d128d639b078a604ddf1e4dc870e46b1186	not-for-merge	tag '1.0.0-rc.3.0.3' of https://github.com/vapor/postgresql
+0fd51eca3df787b893c8c73ea0732b50ec221ffb	not-for-merge	tag '1.0.0-rc.3.0.4' of https://github.com/vapor/postgresql
+d67f6a56bf30a11a015d0364cb9f51aca2072129	not-for-merge	tag '1.0.0-rc.4' of https://github.com/vapor/postgresql
+f44de16c544c603e777f58d4df4008fd9f03ff89	not-for-merge	tag '1.0.0-rc.4.1' of https://github.com/vapor/postgresql
+d8a17a91ec654e01e23f0ebeccdb5fa274f505e5	not-for-merge	tag '1.0.0-rc.4.2' of https://github.com/vapor/postgresql
+c34533ebf7ae34cff1430a2803c83a02bb98557a	not-for-merge	tag '1.0.0-rc.4.2.1' of https://github.com/vapor/postgresql
+7d87337846887b3c4a207a603add98289ffd5f76	not-for-merge	tag '1.0.0-rc.4.3' of https://github.com/vapor/postgresql
+7659f62f951dba3527fc9179f4e30301fc47d3c2	not-for-merge	tag '1.0.0-rc.4.4' of https://github.com/vapor/postgresql
+3fcc6263f94e836dd9b3722a37bfc61308c0b5f0	not-for-merge	tag '1.0.1' of https://github.com/vapor/postgresql
+dffb708a82b09f30c2ebc3268e9117da87a3364f	not-for-merge	tag '1.0.2' of https://github.com/vapor/postgresql
+c8b01a35efae6737e8d896440f5eec9b219571d9	not-for-merge	tag '1.1.0' of https://github.com/vapor/postgresql
+b948492d06e11705705bc36da5ac314946efc8df	not-for-merge	tag '1.1.1' of https://github.com/vapor/postgresql
+975cc8b3471966a7986e1ffac4db4bac26d6db86	not-for-merge	tag '1.1.2' of https://github.com/vapor/postgresql
+870c4b72af8366a32e807fa7a234b87c500fd1b5	not-for-merge	tag '1.2.0' of https://github.com/vapor/postgresql
+cbe5505f6f15c69f569ec939cf7e7cc8be61857c	not-for-merge	tag '1.2.1' of https://github.com/vapor/postgresql
+d34cf720a43ea2ef8dbf2ba7d9f18d39bb1eb795	not-for-merge	tag '1.2.2' of https://github.com/vapor/postgresql
