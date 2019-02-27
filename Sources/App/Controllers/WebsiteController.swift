@@ -55,7 +55,7 @@ struct WebsiteController: RouteCollection {
                         let context = AcronymContext(title: acronym.short,
                                                      acronym: acronym,
                                                      user: user)
-                        return try req.view().render("acronym", context)
+                        return try req.view().render("acronyms", context)
                 }
         }
     }
