@@ -1,0 +1,30 @@
+
+#set("content"){
+<h1>#(user.name)</h1>
+<h2>#(user.username)</h2>
+#if(count(acronyms) > 0){
+<table class = "table table-bordered table-hover">
+    <thead class = "thead-light">
+        <tr>
+            <th>short</th>
+            <th>long</th>
+        </tr>
+    </thead>
+    <tbody>
+        #for(acronym in acronyms){
+        <tr>
+            <td><a href = "/acronyms/#(acronym.id)"> #(acronym.short)</a></td>
+            <td> #(acronym.long)</td>
+        </tr>
+        }
+    </tbody>
+</table>
+} else {
+<h2>there aren't any acronym</h2>
+}
+
+}
+#embed("base")
+
+
+
