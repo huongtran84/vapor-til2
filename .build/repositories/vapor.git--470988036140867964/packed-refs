@@ -14,13 +14,11 @@ ced8ec3b94b80eb775f8045ce0df749f079843ec refs/heads/nio-ts
 ea99901ff138d6f96aa1e52622edfd171454ae6c refs/heads/nserror-debuggable
 c4ecb138b0bb53aad74b9e52ebd318b53063bde2 refs/heads/rafiki270-patch-1
 3e96575c14e8c91964765c2e3b9261cdbf0a3a21 refs/heads/rc23-updates
-c713a0d8be77786154df6e4905b9254fac31a2f2 refs/heads/route-metadata
 61c7bbfbe623cff841b63abd94408d06b4f9f464 refs/heads/siemensikkema-patch-1
 6965a09c8ae68bdff9ae86bd2656958072eb0195 refs/heads/twof-patch-1
 7ed1a90fb24bf52b27f6d035547677330fe16e9b refs/heads/urlencodedform-gm
 b4fcd10d565ed32ecdf8ecae98487fc6ced73254 refs/heads/vapor2
 de50c0877fc3b825fe8da273c0d29ee0a3d2ce84 refs/heads/ws-debug
-e2da15c125440d535bb8dbfeb811980b9e3077e3 refs/heads/xctvapor
 209aec8fe8e5ca4588e27dab08cc42419716be2a refs/pull/100/head
 838f5c53d7178f52476b338e0536f4cdd826686e refs/pull/1001/head
 bdf164a3c99568e3823314d48b9cb500802dc814 refs/pull/1002/head
@@ -506,7 +504,6 @@ c2fcf196034ebc729453797731e5a342e4a9cc9e refs/pull/1873/head
 1dc167600c66335c155b9ee7c2f1129aa858a05b refs/pull/189/head
 88323b7cae0cd1baf9e8800369b67b41c4a1c5e1 refs/pull/1890/head
 c713a0d8be77786154df6e4905b9254fac31a2f2 refs/pull/1891/head
-9b21236eb4181f705b1654effd0d39b365f3ebad refs/pull/1891/merge
 92a66267d5f3319db0bfad9ebbddea932e9abebc refs/pull/1895/head
 59b6dc767baa8b17837e9ca8e096365d0cb63398 refs/pull/1896/head
 c2fbb48ad461cfb44e8434c747840ebc5724edb4 refs/pull/1897/head
@@ -519,7 +516,6 @@ aa4dd655317b90038e7247c2fa7612cdbb1b832b refs/pull/1901/head
 3bc5b8c2b181b3f394288714ac8067ab86d7ce88 refs/pull/1903/head
 af7f9991511054e4b76da5a420bb2b7e6aff214a refs/pull/1904/head
 e2da15c125440d535bb8dbfeb811980b9e3077e3 refs/pull/1906/head
-f85663fe4a2071b7376eb7f0d898b89f12320622 refs/pull/1906/merge
 c77d3918c25b4f5fa71a5ed19f30384d05ab5300 refs/pull/1908/head
 31cd94edd228c22d64abcc12c8417edd755200cc refs/pull/1909/head
 bc458e2d55fb1ca7217d69d24feec4cfc41eec2d refs/pull/191/head
