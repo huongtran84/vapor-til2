@@ -47,4 +47,16 @@ extension Category {
   var acronyms: Siblings<Category, Acronym, AcronymCategoryPivot> {
     return siblings()
   }
+   static func addCategory(_ name: String, to acronym: Acronym, on req: Request) throws -> Future<Void> {
+        return Category.query(on: req).filter(\.name == name).first().flatMap(to: Void.self, { foundCategory in
+            if let exsitenCategory = foundCategory {
+                return acronym.categories.attach(exsitenCategory, on: req).transform(to: ())
+            } else {
+                let category = Category(name: name)
+                return category.save(on: req).flatMap(to: Void.self, { savedCategory in
+                    return acronym.categories.attach(savedCategory, on: req).transform(to: ())
+                })
+            }
+        })
+    }
 }

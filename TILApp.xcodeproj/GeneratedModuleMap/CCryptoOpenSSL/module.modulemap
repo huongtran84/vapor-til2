@@ -1,4 +1,4 @@
 module CCryptoOpenSSL {
-    umbrella "/Volumes/Workspace/Tutorials/Server_Side_Swift_Vapor_v1.0.1/10-sibling-relationships/final/TILApp/.build/checkouts/crypto.git--7456734141023650968/Sources/CCryptoOpenSSL/include"
+    umbrella "/Volumes/Workspace/Tutorials/Server_Side_Swift_Vapor_v1.0.1/10-sibling-relationships/final/TILApp/.build/checkouts/crypto.git-8593572730380775883/Sources/CCryptoOpenSSL/include"
     export *
 }
