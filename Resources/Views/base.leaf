@@ -41,10 +41,13 @@
                             <a href="/categories" class="nav-link">All Categories</a>
                         </li>
                         <li class="nav-item #if(title == "Create An Acronym"){active}">
-                            <a href="/acronyms/create" class="nav-link">
-                                Create An Acronym
-                            </a>
+                            <a href="/acronyms/create" class="nav-link">Create An Acronym</a>
                         </li>
+                        #if(!userLoggedIn) {
+                        <li class="nav-item #if(title == "Register"){active}">
+                            <a href="/register" class="nav-link">Register</a>
+                        </li>
+                        }
                 
                     </ul>
                     #if(userLoggedIn){

@@ -43,16 +43,18 @@ struct WebsiteController: RouteCollection {
         authSessionRoutes.post("logout", use: logoutHandler)
         authSessionRoutes.post(LoginPostData.self, at: "login", use: loginPostHandler)
         let authProtectedRoutes = authSessionRoutes.grouped(RedirectMiddleware<User>(path: "/login"))
-
+        authSessionRoutes.get("register", use: registerHandler)
+        authSessionRoutes.post(RegisterData.self, at: "register", use: registerPostHandler)
+        
         authProtectedRoutes.get("acronyms","create", use: createAcronymHandler)
         authProtectedRoutes.post(CreateAcronymData.self, at: "acronyms","create", use: createAcronymPostHandler)
         authProtectedRoutes.get("acronyms",Acronym.parameter,"edit", use: editAcronymHandler)
         authProtectedRoutes.post("acronyms",Acronym.parameter,"edit", use: editAcronymPostHandler)
         authProtectedRoutes.post("acronyms",Acronym.parameter,"delete", use: deleteAcronymHandler)
-
-
-
-
+        
+        
+        
+        
     }
     
     func indexHandler(_ req: Request) throws -> Future<View> {
@@ -130,7 +132,7 @@ struct WebsiteController: RouteCollection {
         let acronym = try Acronym(short: data.short, long: data.long, userID: user.requireID())
         return acronym.save(on: req).flatMap(to: Response.self, { acronym in
             guard let id = acronym.id else {
-               throw Abort(.internalServerError)
+                throw Abort(.internalServerError)
             }
             var categorySave : [Future<Void>] = []
             for category in data.categories ?? [] {
@@ -173,22 +175,22 @@ struct WebsiteController: RouteCollection {
                                 to: acronym,
                                 on: req))
                     }
-                
-                        for categoryNameToRemove in categoriesToRemove {
-                            // 10
-                            let categoryToRemove = existCategories.first {
-                                $0.name == categoryNameToRemove
-                            }
-                            // 11
-                            if let category = categoryToRemove {
-                                categoryResults.append(
-                                    acronym.categories.detach(category, on: req))
-                            }
+                    
+                    for categoryNameToRemove in categoriesToRemove {
+                        // 10
+                        let categoryToRemove = existCategories.first {
+                            $0.name == categoryNameToRemove
+                        }
+                        // 11
+                        if let category = categoryToRemove {
+                            categoryResults.append(
+                                acronym.categories.detach(category, on: req))
+                        }
                     }
-                   
-                return categoryResults.flatten(on: req).transform(to: req.redirect(to: "/acronyms/\(id)"))
-
-
+                    
+                    return categoryResults.flatten(on: req).transform(to: req.redirect(to: "/acronyms/\(id)"))
+                    
+                    
                     
                     
                 })
@@ -198,6 +200,35 @@ struct WebsiteController: RouteCollection {
     func logoutHandler(_ req : Request) throws -> Response {
         try req.unauthenticate(User.self)
         return req.redirect(to: "/")
+    }
+    func registerHandler(_ req: Request) throws -> Future<View> {
+        let context : RegisterContext
+        if let message = req.query[String.self,at:"message"] {
+            context = RegisterContext(message: message)
+        } else {
+            context = RegisterContext()
+        }
+        return try req.view().render("register", context)
+    }
+    func registerPostHandler(_ req:Request,data:RegisterData) throws -> Future<Response> {
+        do {
+            try data.validate()
+        } catch(let error) {
+            let redirect:String
+            if let error = error as? ValidationError,let message = error.reason.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed){
+                redirect = "/register?message=\(message)"
+            } else {
+                redirect = "/register?message=Unknow+error"
+            }
+            return req.future(req.redirect(to: redirect))
+        }
+        
+        let password = try BCrypt.hash(data.password)
+        let user = User(name: data.name, username: data.username, password: password)
+        return  user.save(on: req).map(to: Response.self, { user in
+            try req.authenticateSession(user)
+            return req.redirect(to: "/")
+        })
     }
     func deleteAcronymHandler(_ req: Request) throws ->Future<Response> {
         return try req.parameters.next(Acronym.self).delete(on: req).transform(to: req.redirect(to: "/"))
@@ -285,5 +316,33 @@ struct LoginPostData : Content {
     let username: String
     let  password : String
     
+}
+struct RegisterContext : Encodable {
+    let title = "Register"
+    let message : String?
+    init(message:String? = nil) {
+        self.message = message
+    }
+}
+struct RegisterData : Content {
+    let name : String
+    let username: String
+    let password : String
+    let confirmPassword: String
+    
+}
+extension RegisterData : Reflectable,Validatable {
+    static func validations() throws -> Validations<RegisterData> {
+        var validations = Validations(RegisterData.self)
+        try validations.add(\.name, .ascii)
+        try validations.add(\.username, .alphanumeric && .count(3...))
+        try validations.add(\.password, .count(8...))
+        validations.add("password match") { (model) in
+            guard model.confirmPassword == model.password else {
+                throw BasicValidationError("password not match")
+            }
+        }
+        return validations
+    }
 }
 
