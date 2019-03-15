@@ -32,24 +32,29 @@ import FluentPostgreSQL
 import Authentication
 
 final class User: Codable {
-  var id: UUID?
-  var name: String
-  var username: String
-  var password: String
-
-    init(name: String, username: String,password: String) {
-    self.name = name
-    self.username = username
-    self.password = password
-  }
-   final class Public: Codable {
+    var id: UUID?
+    var name: String
+    var username: String
+    var password: String
+    var twitterURL : String?
+    
+    init(name: String, username: String,password: String,twitterURL : String?=nil) {
+        self.name = name
+        self.username = username
+        self.password = password
+        self.twitterURL = twitterURL
+    }
+    final class Public: Codable {
         var id: UUID?
         var name: String
         var username: String
-        init(id:UUID?,name: String, username: String) {
+        var twitterURL : String?
+
+        init(id:UUID?,name: String, username: String,twitterURL:String? = nil) {
             self.id = id
             self.name = name
             self.username = username
+            self.twitterURL = twitterURL
         }
     }
 }
@@ -59,21 +64,23 @@ extension User: Content {}
 extension User: Migration {
     static func prepare(on connection : PostgreSQLConnection) throws -> Future<Void> {
         return Database.create(User.self, on: connection, closure: { builder in
-            try addProperties(to: builder)
-            builder.unique(on: \.username)
+            builder.field(for: \.id, isIdentifier: true)
+            builder.field(for: \.name)
+            builder.field(for: \.username)
+            builder.field(for: \.password)
         })
     }
 }
 extension User: Parameter {}
 extension User.Public : Content {}
 extension User {
-  var acronyms: Children<User, Acronym> {
-    return children(\.userID)
-  }
+    var acronyms: Children<User, Acronym> {
+        return children(\.userID)
+    }
 }
 extension User {
     func convertToPublic () -> User.Public {
-        return User.Public(id: id, name: name, username: username)
+        return User.Public(id: id, name: name, username: username,twitterURL: twitterURL)
     }
 }
 extension Future where T : User {
@@ -84,8 +91,8 @@ extension Future where T : User {
     }
 }
 extension User : BasicAuthenticatable {
-     static var usernameKey: UsernameKey = \.username
-     static var passwordKey: PasswordKey = \.password
+    static var usernameKey: UsernameKey = \.username
+    static var passwordKey: PasswordKey = \.password
 }
 
 extension User : TokenAuthenticatable {
@@ -99,7 +106,7 @@ struct AdminUser : Migration {
             fatalError("Failed to create admin user")
         }
         let user = User(name: "Admin", username: "admin", password: hashedPassword)
-       return user.save(on: conn).transform(to: ())
+        return user.save(on: conn).transform(to: ())
     }
     static func revert(on conn: PostgreSQLConnection) -> Future<Void> {
         return .done(on :conn)
@@ -107,3 +114,4 @@ struct AdminUser : Migration {
 }
 extension User : PasswordAuthenticatable {}
 extension User : SessionAuthenticatable {}
+
